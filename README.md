@@ -5,7 +5,7 @@ Feita com o objetivo de praticar Desenvolvimento Web utilizando componentes, est
 
 ## Preview
 
-![Preview do App](./screenshot.png)
+![Preview do App](public/screenshot.png)
 
 ## Funcionalidades
 
