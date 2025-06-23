@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background: rgb(240, 240, 240);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-image {
+  filter: blur(4px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.task-counter {
+  z-index: 1;
+  font-size: 2rem;
+  color: white;
+  padding: 0.5%;
+  border-radius: 16px;
+  backdrop-filter: blur(2px);
+}
+.btn-group {
+  padding: 0.5%;
+  display: flex;
+  gap: 10px;
+}
+.btn-group button {
+  background: rgba(255, 255, 255, 0.41);
+  border: 2px solid rgba(255, 255, 255, 0.28);
+  color: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.8px);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-group button:hover {
+  background: white;
+  color: black;
+}
+
+.container {
+  overflow: hidden;
+  padding: 20px;
+}
+.task-list {
+  height: 100%;
+  list-style: none;
+  padding: 0 10px;
+  overflow-y: auto;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.task-item label {
+  display: flex;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.task-item button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  color: #dc2626;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.remove-task-btn {
+  cursor: pointer;
+  font-size: small;
+  width: 10%;
+  padding: 10px;
+  border: none;
+  border-radius: 16px;
+  background-color: transparent;
+  color: #ef4444;
+  transition: background 0.3s, color 0.3s;
+}
+
+.remove-task-btn:hover {
+  background-color: #dc2626;
+  color: white;
+}
+
+.add-task-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  width: 100%;
+  background-color: #3766ff;
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.add-task-btn:hover {
+  background-color: #687be7;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.text-area {
+  border: none;
+  border-radius: 16px;
+  padding: 20px;
+}
+.text-area:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.empty-list {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3rem;
+}
