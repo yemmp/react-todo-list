@@ -22,24 +22,24 @@ Feita com o objetivo de praticar Desenvolvimento Web utilizando componentes, est
 - CSS
 - Radix Icons
 
-## Rodando Localmente
+# Rodando Localmente
 
-# Clone o Repositório
+## Clone o Repositório
 
 git clone https://github.com/yemmp/react-todo-list.git
 
-# Acesse a página do projeto
+## Acesse a página do projeto
 
 cd react-todo-list
 
-# Instale as dependências
+## Instale as dependências
 
 npm install
 
-# Instale a biblioteca de icones
+## Instale a biblioteca de icones
 
 npm install @radix-ui/react-icons
 
-# Inicie o projeto
+## Inicie o projeto
 
 npm run dev
